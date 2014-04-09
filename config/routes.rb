@@ -1,4 +1,4 @@
-Heaven::Application.routes.draw do
+Rails.application.routes.draw do
   get  "/" => redirect("https://github.com/atmos/heaven")
 
   github_authenticate(:team => :employees) do

@@ -11,8 +11,6 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
 ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 
-ENV["HEROKU_DEPLOY_PRIVATE_KEY"] = "private\nkey\n"
-
 RSpec.configure do |config|
   config.order = "random"
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
