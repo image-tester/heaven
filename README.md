@@ -62,7 +62,7 @@ You need redis for resque and as many workers as you think you'll need. I'd keep
 * `GITHUB_TOKEN`: A personal access token from your [account settings](https://github.com/settings/applications), for API interaction. The token owner needs administrative rights to the repository.
 * `DEPLOYMENT_TIMEOUT`: A timeout in seconds that the deployment should take. Deployments are aborted if they exceed this value. Defaults to 300 seconds.
 
-# See Also
+# See Also this stuff
 
 * [hubot-deploy](https://github.com/atmos/hubot-deploy) - Kick off deployments from chat.
 * [heaven-notifier](https://github.com/atmos/heaven-notifier) - Listens for DeploymentStatus events from GitHub and notifies you.
