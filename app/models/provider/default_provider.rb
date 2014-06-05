@@ -134,6 +134,8 @@ module Provider
         notify
         record
       end
+    rescue Resque::TermException
+      Rails.logger.info "TermException caught. :cry:"
     rescue StandardError => e
       Rails.logger.info e.message
       Rails.logger.info caller
